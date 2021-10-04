@@ -53,4 +53,27 @@ source = "git::https://example.com/vpc.git?ref=v1.2.0"
 
 }
 
+# Fetching Archives over HTTP
+
+## HTTP URLs Example:
+
+module "vpc" {
+
+source = "https://example.com/vpc-module.zip"
+
+}
+
+## Extensions Terraform Recognizes:
+1. zip
+2. tar.bz2 and tbz2
+3. tar.gz and tgz
+4. tar.xz and txz
+
+## Archive Argument Example:
+
+module "vpc" {
+source = "https://example.com/vpc-module?archive=zip"
+
+}
+
 
