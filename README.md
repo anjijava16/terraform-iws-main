@@ -77,4 +77,27 @@ source = "https://example.com/vpc-module?archive=zip"
 
 }
 
+# S3 Bucket
+## Locations the module installer looks for AWS creds:
+2. 1. The AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment.
+3. The default profile in the .aws/credentials file in your home directory.
+4. If running on an EC2 instance, temporary credentials associated with the instance’s IAM instance profile.
+
+module "consul" {
+
+source = "s3::https://s3-eu-west-1.amazonaws.com/examplecorp-terraform-modules/vpc.zip"
+
+}
+
+# GCS Bucket
+## To Set Credentials:
+1. Enter the path of your service account key file in the GOOGLE_APPLICATION_CREDENTIALS environment variable.
+2. If you’re running Terraform from a GCE instance, the default credentials are automatically available.
+3. On your computer, you can make your Google identity available by running gcloud auth application-default login.
+
+module "consul" {
+
+source = "gcs::https://www.googleapis.com/storage/v1/modules/foomodule.zip"
+
+}
 
