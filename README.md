@@ -23,4 +23,13 @@ storage_container_name="welcome"
 
 }
 
+# Module Source Types 8
+1. Local paths
+2. Terraform Registry
+3. GitHub
+4. Bitbucket
+5. Generic Git, Mercurial repositories
+6. HTTP URLs
+8. S3 buckets
+9. GCS buckets
 
