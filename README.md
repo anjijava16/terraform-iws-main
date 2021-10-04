@@ -33,3 +33,18 @@ storage_container_name="welcome"
 8. S3 buckets
 9. GCS buckets
 
+# Generic Github Repo Example
+
+module "vpc" {
+source = "git::https://example.com/vpc.git"
+}
+
+module "storage" {
+source = "git::ssh://username@example.com/storage.git"
+}
+
+module "vpc" {
+source = "git::https://example.com/vpc.git?ref=v1.2.0"
+}
+
+
