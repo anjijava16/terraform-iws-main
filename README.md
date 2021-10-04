@@ -36,15 +36,21 @@ storage_container_name="welcome"
 # Generic Github Repo Example
 
 module "vpc" {
-source = "git::https://example.com/vpc.git"
+ 
+ source = "git::https://example.com/vpc.git"
+
 }
 
 module "storage" {
+
 source = "git::ssh://username@example.com/storage.git"
+
 }
 
 module "vpc" {
+
 source = "git::https://example.com/vpc.git?ref=v1.2.0"
+
 }
 
 
