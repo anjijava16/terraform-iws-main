@@ -4,6 +4,11 @@ This module will call based on the type of source it will call to respetive modu
 
 # Module :
 
+## Branch Name:
+    https://github.com/anjijava16/terraform-iws-modules.git?ref=azure-storage
+
+## Example 
+
 module "storage_example" {
 
 source ="git::https://github.com/anjijava16/terraform-iws-modules.git?ref=azure-storage"
