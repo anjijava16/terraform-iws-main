@@ -79,9 +79,9 @@ source = "https://example.com/vpc-module?archive=zip"
 
 # S3 Bucket
 ## Locations the module installer looks for AWS creds:
-2. 1. The AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment.
-3. The default profile in the .aws/credentials file in your home directory.
-4. If running on an EC2 instance, temporary credentials associated with the instance’s IAM instance profile.
+1. The AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment.
+2. The default profile in the .aws/credentials file in your home directory.
+3. If running on an EC2 instance, temporary credentials associated with the instance’s IAM instance profile.
 
 module "consul" {
 
