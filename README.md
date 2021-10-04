@@ -72,6 +72,7 @@ source = "https://example.com/vpc-module.zip"
 ## Archive Argument Example:
 
 module "vpc" {
+
 source = "https://example.com/vpc-module?archive=zip"
 
 }
